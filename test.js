@@ -10,6 +10,8 @@ describe('level1', () => {
         assert.strictEqual(level1(["AYC", "AYZ"]), "AYZ");
         assert.strictEqual(level1(["XYC", "AYZ"]), "XYZ");
         assert.strictEqual(level1(["AYZ", "AYZ"]), "AYZ");
+        assert.strictEqual(level1(["ABC", "ABZ"]), "ABZ");
+        assert.strictEqual(level1(["XBZ", "ABZ"]), "XBZ");
     });
 });
 
@@ -21,6 +23,7 @@ describe('level2', () => {
     });
     it('should return 0 if there is no pair ', () => {
         assert.strictEqual(level2([3, "1x2x3", "2x3x4", "3x4x5"]), 0);
+        assert.strictEqual(level2([4, "1x20x3", "2000x3x40", "3x4x5","40x3x2000"]), 1);
     });
     
 });
