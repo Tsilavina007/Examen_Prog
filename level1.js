@@ -7,5 +7,5 @@ export function level1(input) {
     str1[2]!=str2[2 ] ? val+="Z" : val+=str1[2] 
     return val
 }
-console.log(level1(["AYC","AYZ"]));
+
 

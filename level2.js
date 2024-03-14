@@ -15,5 +15,3 @@ export function level2(input) {
     })
     return res
 }
-
-console.log(level2([6,"8x7x10","7x8x10","4x8x6","1x5x4","7x5x9","1x5x4"]));
