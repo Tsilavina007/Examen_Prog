@@ -9,13 +9,12 @@ function level3(input) {
         }else if(input[i]=="SWAP"){
             output.reverse()
         }else if(input[i].split(' ').includes("JUMP")){
-            // input[i]="X"
-            // i+=parseInt(input[i].split(' ')[1])
-            console.log(input[i]);
+            let val=parseInt(input[i].split(' ')[1])
+            input[i]="X"
+            i+=val
         }else if(input[i]=="X"){
             continue
         }
-        console.log(i);
     }
     return output
 }
