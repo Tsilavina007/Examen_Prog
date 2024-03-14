@@ -1,4 +1,4 @@
-function level3(input) {
+export function level3(input) {
     let output =[0, 0]
     for(let i=1; i<=input[0]; i++){
         if(input[i].split(' ').includes("ADD")){
@@ -13,10 +13,8 @@ function level3(input) {
             input[i]="X"
             i+=val
         }else if(input[i]=="X"){
-            continue
+            continue 
         }
     }
-    return output
+    return output.join(' ')
 }
-
-console.log(level3([6, "ADD 5", "SWAP","ADD 3","JUMP -2","TRANSFER","ADD 2"]));
