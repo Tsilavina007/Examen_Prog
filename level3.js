@@ -11,7 +11,7 @@ export function level3(input) {
         }else if(input[i].split(' ').includes("JUMP")){
             let val=parseInt(input[i].split(' ')[1])
             input[i]="X"
-            i+=val
+            val>0?i+=val-1:i+=val
         }else if(input[i]=="X"){
             continue 
         }
