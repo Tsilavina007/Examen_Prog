@@ -38,6 +38,7 @@ describe('level3', () => {
     });
     it('should return the volume contained at the end of the recipe in the right correctly', () => {
         assert.strictEqual(level3([6, "ADD 5","SWAP", "ADD 3", "JUMP -2", "TRANSFER", "ADD 5"]),"11 5");
+        assert.strictEqual(level3([6, "ADD 5","SWAP", "ADD 3", "JUMP 2", "TRANSFER", "ADD 5"]),"5 8");
     });
     
 });
